@@ -1,0 +1,14 @@
+Unverzichtbar: Einige Cookies sind unerlässlich, damit Sie die volle Funktionalität unserer Website nutzen können. Sie ermöglichen es uns, Benutzersitzungen aufrechtzuerhalten und Sicherheitsbedrohungen zu verhindern. Sie sammeln oder speichern keine persönlichen Daten. Mit diesen Cookies können Sie sich beispielsweise in Ihrem Konto anmelden, Produkte in den Warenkorb legen und sicher auschecken.
+
+Statistiken: Diese Cookies speichern Informationen wie die Anzahl der Besucher der Website, die Anzahl der eindeutigen Besucher, die besuchten Seiten der Website, die Quelle des Besuchs usw. Diese Daten helfen uns zu verstehen und zu analysieren, wie gut die Website funktioniert und wo es Verbesserungspotential gibt.
+
+
+Marketing (derzeit nicht aktiv): Unsere Website zeigt Werbung an. Diese Cookies werden verwendet, um die Anzeigen, die wir Ihnen zeigen, so zu personalisieren, dass sie für Sie von Bedeutung sind. Mithilfe dieser Cookies können wir auch die Effizienz dieser Werbekampagnen verfolgen.
+
+Die in diesen Cookies gespeicherten Informationen können auch von Drittanbietern verwendet werden, um Ihnen Anzeigen auf anderen Websites im Browser zu schalten.
+
+Funktional: Dies sind die Cookies, die bestimmte nicht wesentliche Funktionen auf unserer Website unterstützen. Diese Funktionen umfassen das Einbetten von Inhalten wie Videos oder das Teilen von Inhalten der Website auf Social Media-Plattformen.
+
+Einstellungen: Mithilfe dieser Cookies können wir Ihre Einstellungen und Browsing-Einstellungen wie Spracheinstellungen speichern, damit Sie bei zukünftigen Besuchen der Website eine bessere und effizientere Erfahrung machen können.
+
+[cookie_audit column = "cookie, description" Heading = "In der folgenden Liste sind die auf unserer Website verwendeten Cookies aufgeführt."]
