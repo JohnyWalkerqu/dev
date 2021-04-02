@@ -356,6 +356,22 @@ function send() {
       return false;
     }
     else {
+      function ajaxcall() {
+        // (B1) GET FORM DATA
+        var data = new FormData();
+        data.append('firstname', firstname);
+        data.append('surname', surname);
+
+        // (B2) AJAX CALL
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', "contact-form.php");
+        xhr.onload = function () {
+          console.log(this.response);
+        };
+        xhr.send(data);
+        return false;
+      }
+
       // console.log('trigger modal');
       var contactInfo = document.getElementById('insert-contact-info');
       contactInfo.innerHTML = "<p>Vorname: " + firstname + "</p> \
