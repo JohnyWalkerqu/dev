@@ -67,13 +67,31 @@ title: Home
     </div>
     <div>
       <h3>TRY</h3>
-    <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
-              ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
-              alt="A 3D model of an astronaut"
-              ar
-              auto-rotate
-              camera-controls></model-viewer>
-              </div>
+      <p>Astronaut</p>
+      <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
+                alt="A 3D model of an astronaut"
+                ar
+                auto-rotate
+                camera-controls></model-viewer>
+
+      <p>Helmet</p>
+      <model-viewer src="https://modelviewer.dev/shared-assets/models/glTF-Sample-Models/2.0/DamagedHelmet/glTF/DamagedHelmet.gltf"
+                alt="A 3D model of a damaged helmet"
+                ar
+                auto-rotate
+                camera-controls></model-viewer>
+
+      <p>Helmet (lazy load)</p>
+            <!-- use unique asset to ensure lazy loading -->
+        <div id="customizeLoad" class="demo">
+        <!-- use unique asset to ensure lazy loading -->
+          <model-viewer id="lazy-load" camera-controls="" reveal="interaction" src="../../shared-assets/models/glTF-Sample-Models/2.0/DamagedHelmet/glTF/DamagedHelmet.gltf" alt="A 3D model of a damaged helmet" data-js-focus-visible="" ar-status="not-presenting">
+          <div id="lazy-load-poster" slot="poster"></div>
+          <div id="button-load" slot="poster">Load 3D Model</div>
+          </model-viewer>
+        </div>
+      </div>
     <p>Herzlich Willkommen auf unserer Website der Marke
       <span class="font-cube">cub<span class="no-space">e</span></span>.
       Wir möchten Ihnen hier eine übersichtliche Darstellung unserer Vision,
