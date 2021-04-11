@@ -44,7 +44,7 @@ var $tracking_cookie_path = false;   // eg. "/"
               "header": "Cookie-Hinweis",
               "message": "Wir verwenden Tracking-Cookies, um unsere Website stetig zu verbessern sowie für anonymisierte Nutzungsstatistiken.",
               // "allow": "changed",
-              "change_preferences_selector":"",
+              "cc_dialogPreferencesPressed":"Preferences",
               "deny": "Ablehnen",
               "link": "Mehr erfahren",
               "href": "/privacy.html",
