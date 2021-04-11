@@ -43,7 +43,7 @@ var $tracking_cookie_path = false;   // eg. "/"
           "content": {
               "header": "Cookie-Hinweis",
               "message": "Wir verwenden Tracking-Cookies, um unsere Website stetig zu verbessern sowie für anonymisierte Nutzungsstatistiken.",
-              "allow": "changed",
+              // "allow": "changed",
               "change_preferences_selector":"",
               "deny": "Ablehnen",
               "link": "Mehr erfahren",
