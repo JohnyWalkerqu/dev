@@ -284,6 +284,11 @@ div.font-size-small {
   letter-spacing: 0;
 }
 
+/* gives some spacing to the last section item before the footer */
+.last {
+  padding-bottom: 10%;
+}
+
 /*
 ========================
     START
@@ -339,6 +344,41 @@ a.cc-btn:nth-child(2) {
  border-color: var(--colorAccept);
  color: var(--colorAccept);
 }
+
+/* cookie banner: move it to the bottom */
+.cc_dialog.simple {
+  max-width: 100% !important;
+}
+
+/* reduces padding from 3rem */
+.cc_dialog {
+  padding: 1.5rem !important;
+}
+
+#changePreferences {
+  left: 10;
+  right: auto;
+  top: auto;
+  bottom: 10;
+  left: auto;
+  position: fixed;
+  z-index: 999;
+}
+
+.cc_dialog button.cc_b_ok {
+  border-color: var(--colorAccept) !important;
+  /* background-color: var(--colorAccept) !important; */
+}
+
+
+div.cc_cp_m_content_entry:nth-child(1) {
+ display: none;
+}
+
+.cc_cp_m_menu > li:nth-child(1) > a:nth-child(1) {
+ display: none;
+}
+
 
 
 
@@ -1355,6 +1395,19 @@ add class on scroll */
 }
 
 /* modell style */
+  model-viewer {
+    margin: auto;
+    height: 100%;
+  }
+
+  #lazy-load {
+    height: 300px;
+  }
+
+  .lazy-load {
+    height: 300px;
+  }
+
   #lazy-load-poster {
     position: absolute;
     left: 0;
@@ -1460,6 +1513,10 @@ input[type=checkbox]:checked ~ .welcome-label:before {
   height: 0;
   transform: scale(1, 0);
   transform-origin: center top;
+}
+
+input[type=checkbox]:checked ~ .welcome-child-model {
+  height: 500px !important;
 }
 
 input[type=checkbox]:checked ~ .welcome-child {
@@ -2718,11 +2775,10 @@ footer a {
   width: 70%;
   max-width: none;
   margin: auto;
+  box-shadow: -1px 15px 30px -12px black;
+  border-radius: 14px;
 }
 
-  .privacy-grid > .card-collapsed {
-    box-shadow: -1px 10px 15px -12px black;
-  }
 
 /*
 GENERAL SETTINGS

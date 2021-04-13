@@ -20,7 +20,7 @@
 <link rel="shortcut icon" href="/content/images/logo/Cube-Icon-white-background.svg" type="image/x-icon" />
 
 <!-- ===================== Tab Title =================== -->
-<title>cube-manufaktur - {{ page.title }}</title>
+<title>cube-outdoor - {{ page.title }}</title>
 
 <!-- ===================== META Tags =================== -->
 <meta http-equiv="content-type" content="text/html" charset="utf-8">
@@ -41,13 +41,10 @@
 <meta name="DC.Description" content="Cube ist eine Marke der Schreinerei Walk GmbH. Es werden hochwertige Aufsatzkabinen für Pickups angeboten die konfigurierbar oder nach Kundenwunsch individuell gebaut werden. Ein modernes, minimalistisches Design und Nachhaltigkeit stehen im Vordergrund.">
 <meta name="DC.Language" content="de">
 
-<!-- ===================== COOKIE Script by Osano =================== -->
-<!-- <script src="https://cmp.osano.com/169lXbSTyaTGBDIM/2097d059-c003-409a-83a0-336140782d88/osano.js"></script> -->
-
 
 <!-- ===================== COOKIE Script by CookieConsent =================== -->
 <!-- Cookie Consent by https://www.CookieConsent.com -->
-<script type="text/javascript" src="//www.cookieconsent.com/releases/3.1.0/cookie-consent.js"></script>
+<script type="text/javascript" src="https://www.cookieconsent.com/releases/3.1.0/cookie-consent.js"></script>
 <script type="text/javascript">
 document.addEventListener('DOMContentLoaded', function () {
 cookieconsent.run({
@@ -55,9 +52,13 @@ cookieconsent.run({
   "consent_type":"express",
   "palette":"light",
   "language":"de",
+  "auto_language": true,
+  "delay": 3000,
   "website_name": "{{ page.title }}",
   "change_preferences_selector":"",
-  "cookies_policy_url":"https://cube-outdoor.com/jekyll_tutorial/privacy/"});
+  "cookies_policy_url":"https://cube-outdoor.com/jekyll_tutorial/privacy/",
+  "change_preferences_selector" : "Cookie-Einstellungen"
+})
 });
 </script>
 
