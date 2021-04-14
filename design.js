@@ -141,6 +141,14 @@ $( ".switch-right" ).click(function() {
 })
 
 
+// COOKIE CONSENT
+// Change text of cookie
+let cookieText = document.querySelector('.cc_dialog_text');
+let userLang = navigator.language || navigator.userLanguage;
+
+if (userLang == "de") {
+  cookieText.innerHTML = "Diese Seite verwendet Cookies um Ihnen die beste Nutzererfahrung zu bieten. Klicken Sie hier um mehr zu erfahren."
+}
 
 
 // SECTION: CONTENT

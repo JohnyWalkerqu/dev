@@ -347,6 +347,7 @@ a.cc-btn:nth-child(2) {
 
 /* cookie banner: move it to the bottom */
 .cc_dialog.simple {
+  width: 100%;
   max-width: 100% !important;
 }
 
