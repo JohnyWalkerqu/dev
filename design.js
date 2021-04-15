@@ -150,9 +150,6 @@ if (userLang == "de") {
   cookieText.innerHTML = "Diese Seite verwendet Cookies um Ihnen die beste Nutzererfahrung zu bieten. Klicken Sie hier um mehr zu erfahren."
 }
 
-$( "." ).click(function() {
-  
-}
 
 
 // SECTION: CONTENT
