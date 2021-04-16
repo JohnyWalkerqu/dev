@@ -61,8 +61,12 @@ cookieconsent.run({
 })
 });
 </script> -->
+
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.2/dist/cookieconsent.js"></script>
+<script type="text/plain" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-LMLBK5YKV0"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.2/dist/cookieconsent.css">
+
+
 <script type="text/javascript">
 document.addEventListener('DOMContentLoaded', function () {
   var cc = initCookieConsent();
@@ -80,36 +84,35 @@ cc.run({
 
 	onAccept: function(cookie){
 		console.log("onAccept fired ...");
-		if(cc.allowedCategory('analytics_cookies')){
+		if ( cc.allowedCategory('analytics_cookies') ){
+
 			cc.loadScript('https://www.google-analytics.com/analytics.js', function(){
 				ga('create', 'G-LMLBK5YKV0', 'auto');
 				ga('send', 'pageview');
-				console.log("analytics.js loaded");
-			});
-		}
+        console.log('ga loaded');
+		    })
 
-		// Delete line below
-		document.getElementById("cookie_val").innerHTML = JSON.stringify(cookie, null, 2);
-	},
+      cc.loadScript('https://www.googletagmanager.com/gtag/js?id=G-LMLBK5YKV0', function() {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        };
+        gtag('js', new Date());
+        gtag('config', 'G-LMLBK5YKV0');
+        console.log('analytics loaded, ' + gtag('config', 'G-LMLBK5YKV0'));
+      })
+		// Delete line below, only for simulation purpose
+		// document.getElementById("cookie_val").innerHTML = JSON.stringify(cookie, null, 2);
+	 }
+  },
 
 	onChange: function(cookie){
 		console.log("onChange fired ...");
 		// do something ...
 
-		// Delete line below
-		document.getElementById("cookie_val").innerHTML = JSON.stringify(cookie, null, 2);
+		// Delete line below, only for simulation purpose
+		// document.getElementById("cookie_val").innerHTML = JSON.stringify(cookie, null, 2);
 	},
-
-  // onAccept : function(){
-  //       // if analytics category has been accepted
-  //       console.log('Woriking')
-  //       // TODO: google cookie einsetzen
-  //       window.dataLayer = window.dataLayer || [];
-  //       function gtag(){dataLayer.push(arguments);}
-  //       gtag('js', new Date());
-  //       gtag('config', 'G-LMLBK5YKV0');
-  //       console.log('cookie initiated');
-  //   },
 
 	languages : {
     'de' : {

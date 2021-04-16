@@ -146,7 +146,7 @@ $( ".switch-right" ).click(function() {
 let cookieText = document.querySelector('.cc_dialog_text');
 let userLang = navigator.language || navigator.userLanguage;
 
-if (userLang == "de") {
+if (userLang == "de" && cookieText != null) {
   cookieText.innerHTML = "Diese Seite verwendet Cookies um Ihnen die beste Nutzererfahrung zu bieten. Klicken Sie hier um mehr zu erfahren."
 }
 

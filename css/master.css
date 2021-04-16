@@ -219,7 +219,7 @@ h5 {
    defines the page-title */
 
 .heading-top {
-  margin-top: 10vh;
+  margin-top: 10vh !important;
 }
 
 .container {
