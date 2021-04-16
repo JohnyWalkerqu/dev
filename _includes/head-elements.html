@@ -70,14 +70,14 @@ cc.run({
 		console.log("onAccept fired ...");
 		if ( cc.allowedCategory('analytics_cookies') ){
 
-			cc.loadScript('https://www.google-analytics.com/analytics.js', function(){
-				ga('create', 'G-LMLBK5YKV0', {
-          cookieFlags: 'max-age=$cookieExpireTime;secure;samesite=none'
-        }, 'auto');
-				ga('send', 'pageview');
-        console.log('ga loaded');
-        console.log('$cookieExpireTime');
-		    })
+			// cc.loadScript('https://www.google-analytics.com/analytics.js', function(){
+			// 	ga('create', 'G-LMLBK5YKV0', {
+      //     cookieFlags: 'max-age=$cookieExpireTime;secure;samesite=none'
+      //   }, 'auto');
+			// 	ga('send', 'pageview');
+      //   console.log('ga loaded');
+      //   console.log('$cookieExpireTime');
+		  //   })
 
       cc.loadScript('https://www.googletagmanager.com/gtag/js?id=G-LMLBK5YKV0', function() {
         window.dataLayer = window.dataLayer || [];
