@@ -76,6 +76,7 @@ cc.run({
         }, 'auto');
 				ga('send', 'pageview');
         console.log('ga loaded');
+        console.log('$cookieExpireTime');
 		    })
 
       cc.loadScript('https://www.googletagmanager.com/gtag/js?id=G-LMLBK5YKV0', function() {
@@ -87,9 +88,13 @@ cc.run({
         // sets the gtag while max-age is set in seconds equally here to 2 months
         // if not set it will be a session cookie
         gtag('config', 'G-LMLBK5YKV0', {
-          cookie_flags: 'max-age=$cookieExpireTime;secure;samesite=none'
+          'cookie_prefix' : 'Analytics Cookie',
+          'cookie_domain' : 'cube-outdoor.com',
+          'cookie_expires': cookieExpireTime; //56 days, in seconds
+          'cookie_update' : false //first cookie accept is measured for exp time
+          'user_id' : 'USER_ID'
         });
-        console.log('analytics loaded, ' + gtag('config', 'G-LMLBK5YKV0'));
+        console.log('gtag cookie loaded');
       })
 		// Delete line below, only for simulation purpose
 		// document.getElementById("cookie_val").innerHTML = JSON.stringify(cookie, null, 2);
