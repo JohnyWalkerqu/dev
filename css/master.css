@@ -2861,6 +2861,11 @@ GENERAL SETTINGS
       /* margin-top: -15vh; */
   }
 
+  /* to add spacing to the body when using jekyll */
+  .heading-top {
+    margin-top: 15vh !important;
+  }
+
 
 /* 62em = 992px */
 @media only screen and (min-width: 62em) {
