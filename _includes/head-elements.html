@@ -53,6 +53,7 @@
 <script type="text/javascript">
 document.addEventListener('DOMContentLoaded', function () {
   var cc = initCookieConsent();
+  let cookieExpireTime = 2 * 28 * 24 * 3600;
 
 // run plugin with config object
 cc.run({
@@ -70,7 +71,9 @@ cc.run({
 		if ( cc.allowedCategory('analytics_cookies') ){
 
 			cc.loadScript('https://www.google-analytics.com/analytics.js', function(){
-				ga('create', 'G-LMLBK5YKV0', 'auto');
+				ga('create', 'G-LMLBK5YKV0', {
+          cookieFlags: 'max-age=$cookieExpireTime;secure;samesite=none'
+        }, 'auto');
 				ga('send', 'pageview');
         console.log('ga loaded');
 		    })
@@ -84,7 +87,7 @@ cc.run({
         // sets the gtag while max-age is set in seconds equally here to 2 months
         // if not set it will be a session cookie
         gtag('config', 'G-LMLBK5YKV0', {
-          cookie_flags: 'max-age=4838400;secure;samesite=none'
+          cookie_flags: 'max-age=$cookieExpireTime;secure;samesite=none'
         });
         console.log('analytics loaded, ' + gtag('config', 'G-LMLBK5YKV0'));
       })
