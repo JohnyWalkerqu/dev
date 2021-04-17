@@ -55,6 +55,15 @@ document.addEventListener('DOMContentLoaded', function () {
   var cc = initCookieConsent();
   let cookieExpireTime = 2 * 28 * 24 * 3600;
 
+  // Google Analytics tracking ID
+  // You may use the old format UA-XXXXXXXX-X or the newer one G-XXXXXXXXXX
+  let $tracking_id = "G-LMLBK5YKV0";
+
+  // Set Google Analytics Cookie domain & path (needed for clearing cookies – have look in the inspector to get the values needed)
+  // If set to false, values from window.location.hostname and window.location.pathname will be used
+  let $tracking_cookie_domain = false; // eg. ".example.com"
+  let $tracking_cookie_path = false;   // eg. "/"
+
 // run plugin with config object
 cc.run({
 	autorun : true,
@@ -78,6 +87,24 @@ cc.run({
       //   console.log('ga loaded');
       //   console.log('$cookieExpireTime');
 		  //   })
+
+      /* –  – NO FUTHER SETTINGS NEEDED BELOW THIS LINE –  – */
+      function embedTrackingCode(){
+          // add <script> to head
+          var gascript = document.createElement("script");
+          gascript.async = true;
+          gascript.src = "https://www.googletagmanager.com/gtag/js?id="+$tracking_id;
+          document.getElementsByTagName("head")[0].appendChild(gascript, document.getElementsByTagName("head")[0]);
+
+          // track pageview
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', $tracking_id, { 'anonymize_ip': true });
+
+          console.log('Google Analytics Tracking new Cookie enabled')
+      };
+
 
       cc.loadScript('https://www.googletagmanager.com/gtag/js?id=G-LMLBK5YKV0', function() {
         window.dataLayer = window.dataLayer || [];
