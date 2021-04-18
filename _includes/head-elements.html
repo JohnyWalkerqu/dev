@@ -53,7 +53,7 @@
 <script type="text/javascript">
 document.addEventListener('DOMContentLoaded', function () {
   var cc = initCookieConsent();
-  let cookieExpireTime = 2 * 28 * 24 * 3600;
+  let $cookieExpireTime = 2 * 28 * 24 * 3600;
 
   // Google Analytics tracking ID
   // You may use the old format UA-XXXXXXXX-X or the newer one G-XXXXXXXXXX
@@ -100,29 +100,38 @@ cc.run({
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', $tracking_id, { 'anonymize_ip': true });
+          gtag('config', $tracking_id, {
+            'anonymize_ip': true,
 
-          console.log('Google Analytics Tracking new Cookie enabled')
+            // self inserted
+            'cookie_prefix' : 'Analytics Cookie',
+            'cookie_domain' : 'cube-outdoor.com',
+            'cookie_expires': $cookieExpireTime, //56 days, in seconds
+            'cookie_update' : false, //first cookie accept is measured for exp time
+            // 'user_id' : 'USER_ID'
+          });
       };
 
+      embedTrackingCode();
 
-      cc.loadScript('https://www.googletagmanager.com/gtag/js?id=G-LMLBK5YKV0', function() {
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          dataLayer.push(arguments);
-        };
-        gtag('js', new Date());
-        // sets the gtag while max-age is set in seconds equally here to 2 months
-        // if not set it will be a session cookie
-        gtag('config', 'G-LMLBK5YKV0', {
-          'cookie_prefix' : 'Analytics Cookie',
-          'cookie_domain' : 'cube-outdoor.com',
-          'cookie_expires': cookieExpireTime, //56 days, in seconds
-          'cookie_update' : false //first cookie accept is measured for exp time
-          // 'user_id' : 'USER_ID'
-        });
-        console.log('gtag cookie loaded');
-      })
+      // cc.loadScript('https://www.googletagmanager.com/gtag/js?id=G-LMLBK5YKV0', function() {
+      //   window.dataLayer = window.dataLayer || [];
+      //   function gtag() {
+      //     dataLayer.push(arguments);
+      //   };
+      //   gtag('js', new Date());
+      //   // sets the gtag while max-age is set in seconds equally here to 2 months
+      //   // if not set it will be a session cookie
+      //   gtag('config', 'G-LMLBK5YKV0', {
+      //     'cookie_prefix' : 'Analytics Cookie',
+      //     'cookie_domain' : 'cube-outdoor.com',
+      //     'cookie_expires': cookieExpireTime, //56 days, in seconds
+      //     'cookie_update' : false //first cookie accept is measured for exp time
+      //     // 'user_id' : 'USER_ID'
+      //   });
+      //   console.log('gtag cookie loaded');
+      // })
+
 		// Delete line below, only for simulation purpose
 		// document.getElementById("cookie_val").innerHTML = JSON.stringify(cookie, null, 2);
 	 }
