@@ -1,0 +1,30 @@
+---
+layout: card-privacy
+title: Zero
+button-title: Information
+---
+
+<div class="card-collapsed">
+  <div class="accordion"
+       data-toggle="collapse"
+       data-target="#collapse{{ card-privacy.title }}"
+       aria-expanded="true"
+       aria-controls="collapse{{ card-privacy.title }}">
+
+    <div class="card-privacy">
+      <div class="card-header" id="heading{{ card-privacy.title }}">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapse{{ card-privacy.title }}" aria-expanded="true" aria-controls="collapse{{ card-privacy.title }}">
+            {{ card-privacy.button-title }}
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapse{{ card-privacy.title }}" class="collapse" aria-labelledby="heading{{ card-privacy.title }}" data-parent="#accordion">
+        <div class="card-body">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

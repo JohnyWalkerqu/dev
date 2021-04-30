@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'cube-font';
+  /* src: url('file:///C:/Users/nicol/OneDrive/Dokumente/GitHub/website/cube/self-build/fonts/strokeWeight-080/font.woff2')
+       format('woff2'),
+       url('file:///C:/Users/nicol/OneDrive/Dokumente/GitHub/website/cube/self-build/fonts/strokeWeight-080/font.woff'),
+       format('woff'); */
+  src: url('/css/webfonts/font_file/font.woff') format('woff');
+       /* url(font.woff2) format('woff2'); */
+  /* font-weight: 80;
+  font-style: normal; */
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: 'cube-font';
+  color: #1d1d1e;
+  margin: 0;
+}
+
+.logo {
+  text-align: center;
+  margin: 5%;
+}
+
+#logo {
+  width: 40%;
+}
+
+
+.section {
+  margin: 5%;
+}
+
+h2 {
+  font-family: 'cube-font';
+  font-size: 2em;
+}
+
+h3 {
+  font-family: 'cube-font';
+  font-size: 1.5em;
+}
+
+.section {
+  min-height: 100px;
+}
+
+.content {
+  height: 100vh;
+  text-align: center;
+  background: url('/bilder/pexels-eberhard-grossgasteiger-1699030.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+hr.welcome-text-seperator {
+  background-color: red;
+  border: none;
+  width: 10%;
+  height: 1px;
+}
+
+.content-box {
+  flex-direction: column;
+  align-self: center;
+}
+
+button {
+  background-color: #454753;
+  color: white;
+  padding: 15px;
+  box-shadow: 2px 2px grey;
+  border: none;
+  border-radius: 20%;
+}
+
+button:hover {
+  background-color: #74778a;
+}
+
+footer {
+  background-color: #1e2032;
+  color: white;
+  font-size: 10pt;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
