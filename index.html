@@ -1,0 +1,713 @@
+---
+layout: default
+title: Home
+---
+
+<!--
+========================
+  FIRST PAGE
+  - GRID CONTAINER SETTINGS
+========================
+-->
+<section id="home" class="landing">
+  <div class="switch-background switch-left"></div>
+  <div class="switch-background switch-right"></div>
+  <div class="landing-background-settings default"></div>
+  <div class="grid-container">
+    <div class="grid-image style">
+      <img
+        id="car"
+        src="/content/images/Pickup-mit-Cube-4-cube_logo.webp"
+        alt="Pickup with Cube"
+        onerror="this.onerror=null; this.src='/content/images/Pickup-mit-Cube-4-cube_logo.png'">
+    </div>
+    <div class="grid-text style">
+      <div class="container-cube-logo grid-logo-font">
+        <div class="container-cube-logo-item cube-c">
+          <span id="cube-logo-special-c">c</span></div>
+        <div class="container-cube-logo-item cube-u">
+          <span id="cube-logo-special-u">u</span></div>
+        <div class="container-cube-logo-item cube-b">
+          <span id="cube-logo-special-b">b</span></div>
+        <div class="container-cube-logo-item cube-e">
+          <span id="cube-logo-special-e">e</span></div>
+      </div>
+    </div>
+    <!-- mouse scroll -->
+    <div class="grid-scroll style">
+      <a href="#welcome">
+        <div class="mouse-scroll">
+      		<!-- <div class="mouse">
+      			<div class="wheel"></div>
+      		</div> -->
+      		<!-- <div> -->
+      			<span class="m-scroll-arrows first"></span>
+      			<span class="m-scroll-arrows second"></span>
+      			<span class="m-scroll-arrows third"></span>
+      		<!-- </div> -->
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!--
+========================
+  SECOND PAGE
+  - WELCOME / CUBE PAGE
+========================
+-->
+<section id="welcome" class="section">
+  <div class="container">
+    <div class="heading">
+      <h2 class="heading">
+        Willkommen
+      </h2>
+    </div>
+    <div>
+      <h3>TRY</h3>
+      <ul class="welcome-welcome justy-flex">
+        <li class="welcome-item">
+          <input id="b1" class="hide" type="checkbox">
+          <label for="b1" class="welcome-label">Astronaut</label>
+            <p class="welcome-child welcome-child-model">
+              <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz" alt="A 3D model of an astronaut" ar="" auto-rotate="" camera-controls="" ar-status="not-presenting">
+              </model-viewer>
+            </p>
+        </li>
+
+        <li class="welcome-item">
+          <input id="c1" class="hide" type="checkbox">
+          <label for="c1" class="welcome-label">Helmet</label>
+            <p class="welcome-child welcome-child-model">
+              <model-viewer src="https://modelviewer.dev/shared-assets/models/glTF-Sample-Models/2.0/DamagedHelmet/glTF/DamagedHelmet.gltf"
+                alt="A 3D model of a damaged helmet"
+                ar
+                auto-rotate
+                camera-controls></model-viewer>
+            </p>
+        </li>
+      </ul>
+
+
+      <p>Helmet (lazy load)</p>
+            <!-- use unique asset to ensure lazy loading -->
+        <div id="customizeLoad" class="demo">
+        <!-- use unique asset to ensure lazy loading -->
+          <model-viewer id="lazy-load" class="lazy-load" camera-controls="" reveal="interaction" src="https://modelviewer.dev/shared-assets/models/glTF-Sample-Models/2.0/DamagedHelmet/glTF/DamagedHelmet.gltf" alt="A 3D model of a damaged helmet" data-js-focus-visible="" ar-status="not-presenting">
+          <div id="lazy-load-poster" slot="poster"></div>
+          <div id="button-load" slot="poster">Load 3D Model</div>
+          </model-viewer>
+        </div>
+      </div>
+
+    <br>
+    <br>
+    <p>Herzlich Willkommen auf unserer Website der Marke
+      <span class="font-cube">cub<span class="no-space">e</span></span>.
+      Wir möchten Ihnen hier eine übersichtliche Darstellung unserer Vision,
+      dem Produkt sowie eine Vorstellung von uns geben.
+    </p>
+
+    <ul class="welcome-welcome justy-flex">
+
+      <li class="welcome-item">
+        <input id="s1" class="hide" type="checkbox">
+        <label for="s1"class="welcome-label">Leistungsangebot</label>
+          <p class = "welcome-child">Mit der Marke <span class="font-cube">cub<span class="no-space">e</span></span>
+            erweitert die <a class="co-body hover-co-body-bb-body hover-bb-dashed"
+            href="https://schreinerei-walk.de" target="_blank">Schreinerei Walk</a> ihr Portfolio
+            um individuelle, hochwertige Lösungen für die Campingbranche.
+            Einen besonderen Wert legen wir dabei auf ein modernes,
+            minimalistisches Design und Nachhaltigkeit in der Materialauswahl.
+            Mit unserem Partner
+            <a class="co-body hover-co-body-bb-body hover-bb-dashed"
+            href="https://campermanufaktur-wuerzburg.de" target="_blank">
+            campermanufaktur
+            </a>
+            kombinieren wir tiefgreifendes
+            Fachwissen aus beiden Bereichen, um für unsere Kunden ein optimales
+            Leistungsangebot darzustellen. Zu den Leistungen zählen
+            unter anderem die Herstellung und der Vertrieb von
+            Aufsatzkabinen für Pickups.
+          </p>
+      </li>
+
+      <li class="welcome-item">
+        <input id="s2" class="hide" type="checkbox">
+        <label for="s2" class="welcome-label">Bau des ersten Prototyps</label>
+        <p class="welcome-child">
+          Derzeit stecken wir noch mitten in der Entwicklung unseres ersten
+          Prototypen, wie auch des Marktauftritts. Der
+          <a class="co-body hover-co-body-bb-body hover-bb-dashed" href="#cube-section">
+          <span class="font-cube prototype">cube-p-0<span class="no-space">1</span></span>
+          </a>
+          wird unser erster Prototyp einer Aufsatzkabine sein, den wir
+          in diesem Sommer vorstellen werden.
+        </p>
+      </li>
+
+      <li class="welcome-item">
+        <input id="s3" class="hide" type="checkbox">
+        <label for="s3" class="welcome-label">Detaillierte Bilder folgen</label>
+        <p class = "welcome-child">Zum Schutz unserer Entwicklung können
+          wir Ihnen derzeit keine detaillierten Bilder zur Verfügung
+          stellen. Wir bitten Sie um Verständnis.
+        </p>
+      </li>
+
+      <li class="welcome-item">
+        <input id="s4" class="hide" type="checkbox">
+        <label for="s4" class="welcome-label">Kontaktieren Sie uns</label>
+        <p class = "welcome-child">Nutzen Sie gerne für weiterführende Informationen unser
+          <a class="co-body hover-co-body-bb-body hover-bb-dashed" href="#contact">Kontaktformular</a>,
+          um am schnellsten über Neuigkeiten informiert zu werden oder
+          treten Sie mit uns direkt in
+          <a class="co-body hover-co-body-bb-body hover-bb-dashed" href="#contact-footer">Kontakt</a>.</p>
+      </li>
+    </ul>
+
+    <div class = "welcome-text-layout-desktop">
+      <p>Mit der Marke <span class="font-cube">cub<span class="no-space">e</span></span>
+        erweitert die <a class="co-body hover-co-body-bb-body hover-bb-dashed"
+        href="https://schreinerei-walk.de" target="_blank">Schreinerei Walk</a> ihr Portfolio
+        um individuelle, hochwertige Lösungen für die Campingbranche.
+        Einen besonderen Wert legen wir dabei auf ein modernes,
+        minimalistisches Design und Nachhaltigkeit in der Materialauswahl.
+        Mit unserem Partner
+        <a class="co-body hover-co-body-bb-body hover-bb-dashed"
+        href="https://campermanufaktur-wuerzburg.de" target="_blank">
+        campermanufaktur
+        </a>
+        kombinieren wir tiefgreifendes
+        Fachwissen aus beiden Bereichen, um für unsere Kunden ein optimales
+        Leistungsangebot darzustellen. Zu den Leistungen gehören sowohl der
+        Ausbau und die Erweiterung von Campingmobilen, als auch die Herstellung
+        und Vertrieb von Aufsatzkabinen für Pickups.
+      </p>
+      <p>Derzeit stecken wir noch mitten in der Entwicklung unseres ersten
+         Prototypen, wie auch des Marktauftritts. Der
+         <a class="co-body hover-co-body-bb-body hover-bb-dashed" href="#cube-section">
+         <span class="font-cube prototype">cube-p-0<span class="no-space">1</span></span>
+         </a>
+         wird unser erster Prototyp einer Aufsatzkabine sein, den wir
+         in diesem Sommer vorstellen werden.
+       </p>
+       <p>Zum Schutz unserer Entwicklung können wir Ihnen derzeit keine
+          detaillierten content/images/logo zur Verfügung stellen. Wir bitten Sie
+          um Verständnis.
+        </p>
+        <p>Nutzen Sie jedoch gerne für weiterführende Informationen unser
+          <a class="co-body hover-co-body-bb-body hover-bb-dashed" href="#contact">Kontaktformular</a>,
+           um am schnellsten über Neuigkeiten informiert zu werden oder
+           treten Sie mit uns direkt in
+           <a class="co-body hover-co-body-bb-body hover-bb-dashed" href="#contact-footer">Kontakt</a>.
+         </p>
+    </div>
+
+    <p>Ihr
+      <span class="font-cube">cub<span class="no-space">e</span></span>-Team.
+    </p>
+  </div>
+</section>
+
+
+<section id="cube-section" class="section">
+  <div class="container">
+    <div class="heading">
+      <h2 class="heading">
+        <span class="font-cube">cube</span></h2>
+    </div>
+
+    <div class="card__container-content">
+
+      <div id="card-prototype" class="row">
+        <div class="col-12">
+          <div class="card card-prototype">
+            <div class="card-body col-12 insert-overlay">
+              <div class="card-title flex-row col-12">
+                <div class="card-title-text card-title-text-w90">
+                  <span class="font-capitalize">P</span>rototyp Kabine
+                </div>
+                <div class="card__header-zipper">
+                  <i class="bi bi-camera"
+                    data-toggle="Tooltip"
+                    data-placement="left"
+                    title="Klicken um einen ersten Eindruck vom Prototyp zu erhalten"></i>
+                </div>
+              </div>
+              <div class="card-collapsed card-body">
+                <div class="accordion" id="accordionExample">
+
+                  <!-- accordion item 4 -->
+                  <div class="card-collapsed-header-container"
+                  data-toggle="collapse"
+                  data-target="#collapseFour"
+                  aria-expanded="true"
+                  aria-controls="collapseFour">
+                  <div class="card-header card-collapse-header" id="headingFour">
+                    <h5 class="mb-0">
+                      <div class="elements">
+                        <!-- property sets margin bottom to 0 -->
+                        <i class="bi bi-pencil bi-collapse-icon mb-2"></i>
+                        <p class="my-0 text-center">Prototyp</p>
+                        <p class="my-0 text-center">Nutzen</p>
+                      </div>
+                    </h5>
+                  </div>
+
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <div class="container mt-3">
+                        <p>Mit dem Bau des Prototyps
+                          <span class="font-cube">
+                            p-0<span class="no-space">1</span></span>
+                          verbinden wir im wesentlichen drei Punkte,
+                          die unter anderem
+                          auch wichtige Antriebsfelder für uns darstellen.
+                        </p>
+                        <p>Ein eigenes Produkt zu kreieren ist ein bereits
+                          über mehrere Generationen, in denen die Schreinerei
+                          aufgebaut wurde, verfolgter Traum. Dieser findet
+                          nun seine Realisierung in eben jener
+                          Entwicklung und bezieht die gesammelten
+                          Erfahrungswerte der eigenen Campingerlebnisse
+                          ein.
+                        </p>
+                        <p>Daneben gilt es nicht nur die kurzfristige
+                          technische Machbarkeit unter Laborbedinungen
+                          zu überprüfen, sondern auch die Langlebigkeit
+                          unter Beweis zu stellen. Hierzu wird ein
+                          enger Austausch mit Fachexperten gepflegt, um
+                          kontinuierlich Überprüfungen sowie Anpassung
+                          in den Prototyp einfließen zu lassen. Die
+                          Materialien werden dabei zum Teil in eine
+                          neue Anwendungsumgebung gebracht, wenngleich
+                          sie bereits langjährig erprobt sind.
+                        </p>
+                        <p>Die Akzeptanz des Marktes stellt ein weiteres
+                          (womöglich das entscheidende) Kriterium dar
+                          hinsichtlich der Ausgestaltung folgender
+                          verkaufsfähiger Produkte. Mit dem Prototyp
+                          soll die These überprüft werden, inwieweit
+                          eine Nachfrage an einem
+                          <span class="font-cube">
+                            cub<span class="no-space">e</span></span>-Modell
+                          besteht.
+                        </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- accordion item 1 -->
+                  <div class="card-collapsed-header-container"
+                       data-toggle="collapse"
+                       data-target="#collapseOne"
+                       aria-expanded="true"
+                       aria-controls="collapseOne">
+                    <div class="card-header card-collapse-header" id="headingOne">
+                      <h5 class="mb-0 justy-align">
+                        <div class="elements">
+                          <i class="bi bi-crop bi-colappse-icon mb-2"></i>
+                          <p class="my-0 text-center">Maße</p>
+                          <p class="my-0 text-center">Gewichte</p>
+                        </div>
+                      </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <div class="container mt-3">
+                          <p>
+                            Die Kabine ist ausgelegt auf drei Erwachsene Personen.
+                            Es stehen ein ca. 2.00m x 1.60m Bett im Alkofen sowie eine
+                            2.00m x 0.90m ausziehbare Schlaflandschaft zur Verfügung.
+                            Insgesamt erreicht die Kabine eine Aufbaulänge von 4160mm
+                            (entspricht der Gesamtlänge des
+                            <span class="font-cube">cub<span class="no-space">e</span></span>)
+                             und 2090mm Gesamtbreite. Die Stehhöhe im
+                             Innenraum wird ca. 1950mm betragen. Das Leergewicht der
+                             Kabine ist im Bereich von 700 - 750 Kilogramm einzuordnen.
+                             Die Prototypenkabine ist für einen Nissan Navara konzipiert,
+                             wird jedoch aufgrund des modularen Unterbaukonzeptes
+                             auf allen bekannten Double Cab Modellen aufsetzen können.
+                             Anpassungen an größere Ladeflächen sind ebenso vorstellbar.
+                           </p>
+                         </div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <!-- accordion item 2 -->
+                  <div class="card-collapsed-header-container"
+                       data-toggle="collapse"
+                       data-target="#collapseTwo"
+                       aria-expanded="true"
+                       aria-controls="collapseTwo">
+                    <div class="card-header card-collapse-header" id="headingTwo">
+                      <h5 class="mb-0">
+                        <div class="elements">
+                          <i class="bi bi-stack bi-colappse-icon mb-2"></i>
+                          <p class="my-0 text-center">Materialien</p>
+                          <p class="my-0 text-center">Komponenten</p>
+                        </div>
+                      </h5>
+                    </div>
+
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <div class="container class="mt-3"">
+                          <p>
+                            Bei der Materialauswahl legen wir einen hohen Stellenwert
+                            auf die Qualität, Gewicht und Nachhaltigkeit.
+                            Beginnend an der Außenverkleidung verwenden wir hier
+                            keine Glasfaserverbundwerkstoffe (GFK), sondern setzen
+                            einen im Fassaden- wie auch Bootsbau genutzten
+                            Verbundstoff ein, der sehr ähnliche Eigenschaften wie
+                            Holz aufweist, somit auch lackier- und formbar ist.
+                            Das Material besteht zu über 60% aus nachwachsenden
+                            Rohstoffen und kann nach einem Recyclingverfahren
+                            wiederverwendet werden.
+                          </p>
+                          <p>
+                            Der <span class="font-cube">p-0<span class="no-space">1</span></span>
+                            ist mit einem Bad inklusive Duschkabine und
+                            Trenntoilette ausgestattet. Hier wird das Material
+                            der Außenhülle als Wandschutz verwendet, um
+                            den Charakter der Außenhülle aufzugreifen und
+                            deren wasserabweisende Eigenschaften zu nutzen.
+                            Zum Kochen ist ein 2-Zonen-Induktionsfeld
+                            vorgesehen, dass über zwei Photovoltaik-Panele
+                            oder aus einer Lithium-Ionen-Batterie betrieben wird.
+                            Der Innenraum wird durch LED's erhellt.
+                            Im Bettbereich sind verstellbare Leselampen
+                            vorgesehen. Die großen Fenster sollen dem Raum
+                            darüber hinaus eine natürliche
+                            Helligkeit geben, verstärkt wird dies durch
+                            Holzverkleidungen im Decken- und Wandbereich.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- accordion item 3 -->
+                  <div class="card-collapsed-header-container"
+                       data-toggle="collapse"
+                       data-target="#collapseThree"
+                       aria-expanded="true"
+                       aria-controls="collapseThree">
+                    <div class="card-header card-collapse-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <div class="elements">
+                          <!-- property sets margin bottom to 0 -->
+                          <i class="mb-2">
+                            <img
+                          class="logo logo-small grey"
+                          contextmenu=""
+                          src="/content/images/logo/Cube-Icon-filled-outside-Seite001.svg" alt="Cube Icon">
+                          </i>
+                          <p class="my-0 text-center">Design</p>
+                          <p class="my-0 text-center">Funktionalität</p>
+                        </div>
+                      </h5>
+                    </div>
+
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <div class="container mt-3">
+                          <p>Eine Besonderheit stellt die äußere
+                            Formgebung dar, welche im Markt bislang nicht zu finden ist.
+                            Der elliptische Alkofen trägt zum Einen zum besonderen
+                            äußeren Erscheinungsbild bei,
+                            zum Anderen werden durch den geringeren
+                            Strömungswiderstand (im Vergleich zu Kabinen
+                            anderer Hersteller) Fahrtgeräusche reduziert.
+                          </p>
+                          <p>Die Verbindung aus ansprechender Gestaltung und
+                            hoher Funktionalität ist insbesondere in
+                            kleinen Räumen ausschlaggebend für den
+                            Wohlfühlcharakter und die Nutzbarkeit.
+                            Dahingehend wird ein minimalistischer Ansatz
+                            in der Wahl der Einrichtungsmaterialien und
+                            Texturen angestrebt.
+                            Der Innenraum ist geprägt durch große Fensterelemente,
+                            wie auch die beidseitig klappbare Eingangstüre. Ein
+                            besonderes Highlight stellt das im ungenutzten Zustand
+                            auf nur 450mm der Gesamtbreites des Aufbaus
+                            schließbare Badelement dar.
+                            Dieses lässt sich bei Benutzung um das doppelte vergrößeren,
+                            wodurch ein Größenverhältnis entsteht, welches nur in
+                            deutlich größeren Campingbauten zu finden ist.
+                          </p>
+                          <p>Zur abschließenden Bestimmung der Innen- und Außenausstattung
+                            wird der <span class="font-cube">p-0<span class="no-space">1</span></span>
+                            über mehrere Wochen von unterschiedlichen Personen
+                            getestet und Optimierungen durchgeführt. Hier wird
+                            dann nochmals der modulare Ansatz der hohen Individualisierbarkeit
+                            gegenübergestellt werden.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- insert button here to include it within the card style -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD: our demand -->
+      <div id="card-our-demand" class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body col-12">
+              <div class="card-title col-12 card-title-text">
+                <div class="font-cube">cube</div>
+                <span class="pre">& </span>
+                <a class="footer-link-hover font-color-body hover-bb-dashed" href="https://www.schreinerei-walk.de" target="_blank">Schreinerei Walk</a>
+              </div>
+              <div class="card-text">
+                <p>Unser Anspruch ist es:</p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    Produkte höchster Qualität aus modernsten
+                    Materialien und Komponenten anzubieten
+                  </li>
+                  <li class="list-group-item">
+                    Mit unseren Partnern ein umfangreiches Leistungsangebot
+                    (insbesondere mit unserem Entwicklungspartner der
+                    <a class="co-body hover-co-body-bb-body hover-bb-dashed" href="https://campermanufaktur-wuerzburg.de"
+                    target="_blank">campermanufaktur</a>) darzustellen
+                  </li>
+                  <li class="list-group-item">Konfigurierbare sowie
+                    individuelle Elemente und Ausführungen nach Kundenwunsch
+                    zu erstellen</li>
+                  <li class="list-group-item">
+                    Moderne, minimalistische und funktionale Produkte
+                    zu kreieren</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD: about us -->
+      <div id="card-about-us" class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body col-12">
+              <div class="card-title card-title-text col-12">
+                <div>Über uns</div>
+              </div>
+              <div class="card-text">
+                <p>Wer sind wir? Der Weg bis zur Kabine in Kurzform.</p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    Seit den 1950er Jahren sind wir im Innenausbau
+                    tätig. Die Firma wurde von Theodor Walk als
+                    Ein-Mann-Betrieb im Jahr 1949 mit wenigen Maschinen gegründet.
+                  </li>
+                  <li class="list-group-item">
+                    Die Firma wuchs über die Jahre und machte sich durch ihre
+                    hochwertigen Arbeiten einen Namen im privaten
+                    Innenausbau, wie auch bei großen Objekteinrichtungen.
+                    Damit wuchsen auch die Ideen eigene Produkte zu
+                    entwickeln und in den Verkauf zu bringen.
+                  </li>
+                  <li class="list-group-item">
+                    Während eines heißen Sommertages im Jahr 2019 war dann
+                    der entscheidende Moment gekommen, als Heike und Michael
+                    Walk in ihrem Korsika Urlaub ein zunächst erstaunliches
+                    Gefährt entlang der Uferpromenade fahren sahen. Dieses
+                    stellte sich später als ein Pickup samt Wohnkabinenaufsatz
+                    heraus. Nach mehreren Messebesuchen im gleichen Jahr
+                    begann bereits kurze Zeit darauf die Arbeit am ersten
+                    Prototypen.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!--
+========================
+  THIRD PAGE
+  - CONTACT PAGE
+========================
+-->
+<section id="contact" class="section input-form last">
+  <div class="container">
+    <div class="heading">
+      <h2 class="heading">
+        <div>Kontaktformular</div>
+      </h2>
+    </div>
+    <div class="content">
+      <p>Um die neuesten Informationen rund um
+        <span class="font-cube">cub<span class="no-space">e</span></span> zu erhalten können Sie
+        nachfolgend Ihre Email-Adresse wie auch weitere Informationen
+        eingeben. Sie werden dann Informationen aus erster Hand zu den
+        Produktdetails, Blicke hinter die Kulissen, wie auch unsere
+        Motivation erfahren.</p>
+      <p>Bleiben Sie gespannt - das
+        <span class="font-cube">
+          cube-tea<span class="no-space">m</span></span>.</p>
+    </div>
+    <div class="seperator">
+      <p>Treten Sie in Kontakt</p>
+    </div>
+
+    <div class="form-own justy-align">
+      <!-- <form id="contact-form" class="validate-form" name="contact-form"
+              method="post" action="mailto:info@cube-manufaktur.com?subject=Contact%20Form%20on%20Cube-Manufaktur.com"
+              enctype="text/plain"> -->
+
+      <form id="contact-form" class="validate-form" name="contact-form"
+            method="post"
+            action="" enctype="multipart/form-data">
+
+            <!-- old html part -->
+      <!-- <form id="contact-form" class="validate-form" name="contact-form"
+            method="post"
+            action="mailto:info@cube-manufaktur.com?subject=Kontaktformular%20on%20Cube-Manufaktur.com" enctype="text/plain"> -->
+            <!-- Input Vorname -->
+        <div class="group validate-input firstname"
+                data-validate = "Firstname is required">
+          <input id="firstname" class="input" type="" name="firstname"
+                 spellcheck="false" maxlength="30" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <span class = "counter" id="counterFirstname">30</span>
+            <label class="label">Vorname (Pflichtfeld)</label>
+        </div>
+
+        <!-- Input Nachname -->
+        <div class="group validate-input surname"
+            data-validate = "Surname is required">
+          <input id="surname" class="input" type="" name="surname"
+                 spellcheck="false" maxlength="30" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <span class = "counter" id="counterSurname">30</span>
+          <label class="label">Nachname (Pflichtfeld)</label>
+        </div>
+
+        <!-- Input Adress -->
+        <div class="group validate-input zip"
+             data-validate = "Zip-Code is required">
+          <!-- TODO: only works correctly on required -->
+          <input id="adress" class="input" type="tel" name="adress"
+                 spellcheck="false" maxlength="5" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <span class = "counter" id="counterAdress">5</span>
+          <label class="label">Postleitzahl (Pflichtfeld)</label>
+        </div>
+
+        <!-- Input Email -->
+        <div class="group validate-input email"
+             data-validate = "Valid email is required: ex@abc.xyz">
+          <input id="email" class="input" type="" name="email"
+                 spellcheck="false" maxlength="32" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <span class = "counter" id="counterEmail">32</span>
+          <label class="label">Email (Pflichtfeld)</label>
+        </div>
+
+      <div class="group validate-input optiondrop">
+        <p>Wie haben Sie von
+          <span class="font-cube">
+            cub<span class="no-space">e</span></span> erfahren?
+        </p>
+
+        <ul class="validate-input welcome-welcome justy-flex">
+          <li class="dropdown">
+            <input id="o1" class="hide" type="checkbox">
+            <label id="label" name="option" for="o1" class="welcome-label option-unselected">Auswahl</label>
+            <ul class="list-group dropdown-list welcome-child">
+              <li class="list-group-item" value="schreinereiWalk">Schreinerei Walk</li>
+              <li class="list-group-item" value="campManWue">Campermanufaktur wue</li>
+              <li class="list-group-item" value="instagramm">Instagramm</li>
+              <li class="list-group-item" value="facebook">Facebook</li>
+              <li class="list-group-item" value="other">Andere</li>
+              <li class="list-group-item" value="">Reset</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="group validate-input commentary">
+        <p>Kommentare oder Anmerkungen?</p>
+        <textarea name="comment" id="comment"
+          maxlength="999" type="" placeholder="Geben Sie hier Ihre Kommentare ein ..."></textarea>
+        <span class="counter" id="counterComment">999</span>
+      </div>
+      <!-- TODO: pop-up info, if send worked correctly -->
+      <!-- TODO: show it in console -->
+
+      <div class="form-group">
+        <!-- Button trigger modal
+             see JS to change the triggerd modal-->
+        <button id="submit" class="submit-button btn-shadow btn"
+                type="submit" value="submit" onclick="send()">
+          <i class="fas fa-paper-plane"></i>
+           Senden
+        </button>
+      </div>
+    </form>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content alert alert-success">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"><strong>Nachricht erzeugt!</strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Ihre E-Mail Applikation sollte sich nun öffnen.
+               Bitte nutzen Sie den "Kopieren"-Button falls dies nicht
+               funktioniert hat und senden uns eine Mail an
+               info@cube-manufaktur.com</p>
+            <p>Ihre Eingabe:</p>
+            <div id = "insert-contact-info"></div>
+          </div>
+          <div class="modal-footer">
+            <button id="copy" type="button" class="btn btn-light">Kopieren</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- <form action="https://getform.io/f/26ab642c-c92a-403b-ae2c-e970966910fc" method="POST">
+
+      <input type="text" name="name">
+      <input type="email" name="email">
+      <input type="text" name="message">
+      <button type="submit">Send</button>
+
+    </form> -->
+  </div>
+
+
+
+</section>

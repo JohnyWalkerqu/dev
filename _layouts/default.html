@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <!-- includes the head elements defined in the _includes-folder -->
+    {% include head-elements.html %}
+  </head>
+  <body>
+
+    <header>
+      <!-- includes the header defined in the _includes-folder -->
+      {% include header.html %}
+    </header>
+
+    <main class="{{ page.title }}">
+      {{ content }}
+    </main>
+
+    <footer>
+      <!-- includes the footer defined in the _includes-folder -->
+      {% include footer.html %}
+    </footer>
+
+    <!-- includes the footer scripts defined in the _includes-folder -->
+    {% include footer-scripts.html %}
+
+  </body>
+</html>
