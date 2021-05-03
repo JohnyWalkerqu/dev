@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-title: Yoda's House
-email: yoda@force.com
-description: >-
-  Very good my site is!
-baseurl: /jekyll_tutorial
-url: https://sfarrens.github.io/
-twitter_username: yoda
-github_username:  yoda
-=======
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -38,14 +28,11 @@ baseurl: / # the subpath of your site, e.g. /blog
 url: https://JohnyWalkerqu.github.io/ # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: herb
 github_username:  herb
->>>>>>> 810369224c56ffc7a1d0e09d12ac59ccca35f8db
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
-<<<<<<< HEAD
-=======
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -66,4 +53,3 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
->>>>>>> 810369224c56ffc7a1d0e09d12ac59ccca35f8db
